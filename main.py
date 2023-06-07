@@ -6,7 +6,6 @@ import datetime
 from dotenv import load_dotenv
 load_dotenv()
 
-
 class BanTracker:
     
     def __init__(self):
