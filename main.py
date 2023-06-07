@@ -14,7 +14,7 @@ class BanTracker:
         to set the initial state and start the main loop.
         """
         self.webhook = os.getenv('WEBHOOK_URL')
-        self.get_latest_ban_id() # Initial Setup
+        self.get_latest_ban_id()
         
         self.main_loop()
         
@@ -88,7 +88,7 @@ class BanTracker:
         """
         return {
             "title": ban['punishedName'],
-            "color": 16711680,  # Red color
+            "color": 16711680,  # Red
             "thumbnail": {
                 "url": f"https://mc-heads.net/avatar/{ban['punished']}/64"
             },
